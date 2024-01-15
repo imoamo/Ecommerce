@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#products>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 8px;
+}

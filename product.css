@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+}
+
+#products>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Basic button style */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+
+  /* Basic input style */
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 20%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  /* Focus effect */
+  .input-field:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Error state */
+  .input-field.error {
+    border-color: #e74c3c;
+  }
+  
+  /* Placeholder style */
+  .input-field::placeholder {
+    color: #aaa;
+  }
+  
+  /* Disabled state */
+  .input-field:disabled {
+    background-color: #f2f2f2;
+    color: #888;
+    cursor: not-allowed;
+  }
+  
+
+  /* Basic select style */
+.select-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 10%;
+    box-sizing: border-box;
+    appearance: none; /* Remove default arrow in some browsers */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path d="M6 6L0 0h12L6 6z" fill="%23444"/></svg>'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  /* Focus effect */
+  .select-field:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Error state */
+  .select-field.error {
+    border-color: #e74c3c;
+  }
+  
+  /* Disabled state */
+  .select-field:disabled {
+    background-color: #f2f2f2;
+    color: #888;
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Filter</title>
+</head>
+<body>
+
+    <form id="filterForm">
+        <label for="inputValue">Enter Value:</label>
+        <input type="number" id="inputValue" required>
+
+        <label for="filterType">Select Filter:</label>
+        <select id="filterType" required>
+            <option value="below">Below</option>
+            <option value="above">Above</option>
+            <option value="equal">Equal</option>
+        </select>
+
+        <button type="button" onclick="filterData()">Filter</button>
+    </form>
+
+    <div id="output">
+        <!-- Filtered data will be displayed here -->
+    </div>
+
+    <script>
+        function filterData() {
+            // Get user input
+            var inputValue = parseFloat(document.getElementById('inputValue').value);
+            var filterType = document.getElementById('filterType').value;
+
+            // Your data (replace this with your actual data)
+            var data = [/* Your data array goes here */];
+
+            // Perform filtering based on user input
+            var filteredData;
+            if (filterType === 'below') {
+                filteredData = data.filter(item => item < inputValue);
+            } else if (filterType === 'above') {
+                filteredData = data.filter(item => item > inputValue);
+            } else if (filterType === 'equal') {
+                filteredData = data.filter(item => item === inputValue);
+            }
+
+            // Display the filtered data
+            document.getElementById('output').innerHTML = '<strong>Filtered Data:</strong> ' + JSON.stringify(filteredData);
+        }
+    </script>
+
+</body>
+</html>
