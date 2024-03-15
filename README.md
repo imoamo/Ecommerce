@@ -1,6 +1,4 @@
-# Ecommerce App Readme
-
-This repository contains the source code for an Ecommerce web application developed using HTML, CSS, and JavaScript. The application includes essential features such as login, sign up, product browsing, cart management, sorting functionality, and logout.
+# Ecommerce App
 
 ## Features
 
