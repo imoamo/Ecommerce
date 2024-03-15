@@ -1,8 +1,8 @@
-let btn = document.getElementById('btn');
+let form = document.getElementById('form');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
 
-btn.addEventListener('click', function (e) {
+form.addEventListener('submit', function (e) {
     e.preventDefault();
     let userDetails = {
         email: email.value,

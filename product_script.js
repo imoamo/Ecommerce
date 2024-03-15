@@ -9,7 +9,7 @@ if (isAuth !== 'Authenticated') {
     let button = document.createElement("button");
     button.innerText = 'Logout';
     button.onclick = function () {
-        localStorage.setItem('isAuth', "Not Authenticated");
+        localStorage.setItem('isAuth', 'Not Authenticated');
         location.reload();
     }
     div.append(button);
@@ -82,7 +82,7 @@ function filterData() {
     let inputValue = parseFloat(document.getElementById('inputValue').value);
     let filterType = document.getElementById('filterType').value;
     let filteredData;
-    filterData.innerHTML = '<strong>Product not found for the given criteria.</strong>' ;
+    filterData.innerHTML = '<strong>Product not found for the given criteria.</strong>';
 
     if (filterType === 'below') {
         filteredData = mainData.filter(item => item.price < inputValue);
@@ -92,10 +92,10 @@ function filterData() {
 
     }
     productsDiv.innerHTML = null;
-    if(filteredData.length > 0){
+    if (filteredData.length > 0) {
 
         displayProducts(filteredData);
-    }else{
+    } else {
         productsDiv.innerHTML = null;
         productsDiv.innerHTML = '<strong>Product not found for the given criteria.</strong>';
     }

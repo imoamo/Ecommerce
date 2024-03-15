@@ -14,7 +14,8 @@ if (isAuth !== 'Authenticated') {
     }
     div.append(button);
     navbar.append(div);
-}
+};
+
 let productsDiv = document.getElementById('products');
 let mainData = JSON.parse(localStorage.getItem('cartDetails')) || [];
 let cartTotal = document.getElementById('cart-total');
